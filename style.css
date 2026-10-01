@@ -1,0 +1,723 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #2b1810;
+  --secondary-color: #c68b59;   
+  --tertiary-color: #a0522d;
+  --fourth-color: #FBF9F5;     
+  --fifth-color: rgba(0,0,0,0.2);
+  --sixth-color: #FBFAF5;     
+  --seven-color: #9D9693;     
+  --eigth-color: #070100;   
+  --nine-color: #FFDCC2;    
+  --ten--color: #F5F3EF;  
+  --eleven-color: #FFFFFF;
+  --twenty-color:#EFEEEA; 
+  --thirty-color: #FFDCB6;
+  --fourthy-color: #3B2319;
+  --fifteen-color: #20110A ; 
+  --sixteen-color: #FAB983;
+}
+
+body {
+    background-color: var(--fourth-color); 
+}
+
+header {
+    position: fixed;
+    background-color: var(--sixth-color);
+    color: var(--primary-color);
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content:space-evenly;
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 0 0 2rem 0 ;
+    top: 0;                
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    z-index: 1000; 
+    transition: opacity 0.4s ease;
+}
+
+header .contenido-header {
+    display : flex;
+    gap: 1rem;
+}
+
+header .contenido-header h2 {
+    font-size: 1.5rem;
+    margin: 2px;
+}
+
+
+header .contenido-header .logo {
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+header nav {
+    display: flex;
+    justify-content:space-around;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+header nav ul a {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+
+header nav ul a:hover {
+  border-bottom: 1px solid var(--primary-color);
+}
+
+header nav ul .inicio {
+    color: var(--eigth-color);
+    font-weight: 600;
+}
+
+header .avatar {
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
+}
+
+/* Main */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  padding-top: 8rem;
+}
+
+
+.hero {
+  display: flex ;
+  flex-direction: column;
+  justify-content: center;
+  align-items:flex-start;
+  gap: 0.5rem;
+  margin-bottom: 4rem;
+  width: 70rem;
+}
+
+.hero .encabezado {
+  display: flex;
+}
+
+section .texto-tecnico { 
+  background-color: var(--nine-color);
+  border-radius: 1rem;
+  padding: 0.3rem;
+  width: 10rem;
+  height: 1.5rem;
+}
+
+.texto-tecnico .manual {
+  font-family: "Montserrat", sans-serif;
+  color: var(--tertiary-color);
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.texto-formacion {
+  padding: 0.2rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+}
+
+.formacion {
+  color: var(--seven-color);
+  text-transform: uppercase;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 5rem;
+}
+
+.guia-hero {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 200;
+}
+
+.contenedor-rutas {
+  background-color: var(--ten--color);
+  width: 70rem;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-bottom: 2rem ;
+}
+
+.titulos-enlaces {
+  display: flex;
+  justify-content:space-between;
+  margin-bottom: 2rem;
+}
+
+.titulos h2 {
+  color: var(--tertiary-color);
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.titulos h3 {
+  color: var(--eigth-color);
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.titulos-enlaces p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  width: 30rem;
+  color:var(--seven-color);
+  margin-top: 0.7rem;
+}
+
+.rutas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+  height: 12rem;
+}
+
+.tarjetas-rutas {
+  background-color: var(--fourth-color);
+  width: 20rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.tarjetas-rutas .fondo-numero {
+  background-color: var(--seven-color);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.tarjetas-rutas .fondo-numero:hover {
+  background-color: var(--eigth-color);
+  color: var(--fourth-color);
+}
+
+
+.tarjetas-rutas .numeros {
+  font-family:"Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 13px;
+}
+
+
+.tarjetas-rutas .tipo-cafe h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.tarjetas-rutas .tipo-cafe p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: var(--seven-color);
+}
+
+.tarjetas-rutas a img {
+  width: 1rem;
+  height: 1rem;
+  transition: transform 0.3s ease
+}
+
+.tarjetas-rutas a img:hover {
+  transform: scale(1.3);
+}
+
+/*------------------------------------------------------- tarjetas cafe ------------------------------------------------------*/
+
+.tarjetas-cafe {
+  font-family:"Montserrat", sans-serif;
+  width: 70rem;
+  height: 30rem;
+  border-radius: 0.9rem;
+  background-color: var(--eleven-color);
+  gap: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 1rem 2rem 1rem 2rem;
+  margin-bottom: 2rem;
+}
+
+
+.tarjetas-cafe .header-tarjetas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6rem;
+}
+
+.tarjetas-cafe .tarjetas-titulos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.tarjetas-cafe .fondo-numero {
+  background-color: var(--eigth-color);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.tarjetas-cafe .numeros{
+  font-family:"Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 13px;
+  color: var(--fourth-color);
+}
+
+.tarjetas-cafe .cafe-textos p {
+  color: var(--tertiary-color);
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.tarjetas-cafe .cafe-textos h2 {
+  color: var(--eigth-color);
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.tarjetas-cafe .fondo-acuoso {
+  background-color: var(--nine-color);
+  border-radius: 1rem;
+  padding: 0.2rem;
+  width: 10rem;
+  height: 1.5rem;
+}
+
+.tarjetas-cafe .texto-acuoso {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.6rem;
+  font-weight: 600;
+  text-align: center;
+  margin-left: 1rem;
+}
+
+.tarjetas-cafe .division-tarjeta {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.tarjetas-cafe .tarjeta-derecha {
+  display: flex;
+  flex-direction: column;
+}
+
+/*imagenes de tarjetas*/
+.tarjetas-cafe figure {
+  position: relative;
+  display: inline-block;
+}
+
+.tarjetas-cafe figure img {
+    width: 20rem;
+    border-radius: 1rem;
+    margin: 3rem 0 0 0;
+}
+
+.tarjetas-cafe figure figcaption {
+  background-color: #2b1810;
+  position: absolute;
+  width:  fit-content;
+  height: 1.2rem;
+  top: 77%;
+  left: 3%;
+  border-radius: 0.125rem;
+}
+
+.tarjetas-cafe figure figcaption p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--eleven-color);
+  text-align: center;
+}
+
+/*------------------------------ texto de las tarjetas------------------------------*/
+
+.tarjetas-cafe .parametros-extraccion {
+  background-color: var(--ten--color);
+  width: 45rem;
+  height: 5rem;
+  padding: 1.2rem 0 1rem 0;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tarjetas-cafe .parametros-extraccion ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tarjetas-cafe .parametros-extraccion ul li strong {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  color: var(--seven-color);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.tarjetas-cafe .parametros-extraccion ul li p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  color: var(--eigth-color);
+  font-weight: 700;
+}
+
+.tarjetas-cafe .tarjeta-metodologia {
+  width: 45rem;
+  height: 13rem;
+  padding: 0 0 0 0.5rem;
+}
+
+.tarjetas-cafe .tarjeta-metodologia h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin: 0.5rem 0 0.5rem 0;
+  color: var(--eigth-color);
+  font-weight: 600;
+}
+
+
+.tarjetas-cafe .tarjeta-metodologia p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  margin: 0.5rem 0 0.5rem 0;
+  color: var(--tertiary-color);
+  font-weight: 400;
+}
+
+.tarjetas-cafe .calificacion {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.tarjetas-cafe .calificacion h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin: 0.5rem 0 0.5rem 0;
+  color: var(--tertiary-color);
+  font-weight: 600;
+}
+
+
+.tarjetas-cafe  .barra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+  gap: 1rem;
+  margin: 0.2rem 0 0 0 ;
+
+}
+
+.tarjetas-cafe .barra .texto-barra{
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 1rem ;
+  color: var(--tertiary-color);
+}
+
+.tarjetas-cafe .linea {
+  background: var(--twenty-color);            
+  border-radius: 0.5rem;
+  height: 0.75rem;
+  width: 100%;                 
+  overflow: hidden;
+}
+
+.relleno {
+  height: 100%;
+  border-radius: 8px;
+}
+
+.relleno.cuerpo {
+  background: var(--tertiary-color);        
+  width: 40%;                   
+}
+
+.relleno.claridad {
+  background: var(--tertiary-color);       
+  width: 100%;                 
+}
+
+.relleno.dulzor {
+  background: var(--tertiary-color);          
+  width: 70%;  
+}
+
+.relleno.Cremosidad {
+  background: var(--tertiary-color);         
+  width: 100%;  
+}
+
+.relleno.Amargor {
+  background: var(--tertiary-color);         
+  width: 40%;
+}
+
+.relleno.dulzor {
+  background: var(--tertiary-color);         
+  width: 100%;
+}
+
+.relleno.textura {
+  background: var(--tertiary-color);         
+  width: 100%;
+}
+
+.relleno.cuerpo {
+  background: var(--tertiary-color);         
+  width: 100%;
+}
+
+.relleno.intensidad {
+  background: var(--tertiary-color);         
+  width: 100%;
+}
+
+.relleno.cuerpo2 {
+  background: var(--tertiary-color);         
+  width: 80%;
+}
+
+/* ------------------------------------------- footer---------------------------------------------------------*/
+
+footer {
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0 0 0 ;
+  margin: 2rem 0 0 0 ;
+  font-family: "Montserrat", sans-serif;
+}
+
+footer .taza {
+  width: 1rem;
+  height: 1rem;
+  color: #EFEEEA;
+}
+
+
+
+footer .header-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  width: 68rem;
+  border-bottom: 1px solid var(--fourthy-color);
+}
+
+footer .header-footer .contenedor-cátedra {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+footer .header-footer h3 {
+  color: var(--nine-color);
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+footer .header-footer .contenedor-edicion {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+footer .fondo-origen {
+  background-color: var(--fifteen-color) ;
+  border: 1px solid var(--sixteen-color);
+  width: 8rem;
+  height: 2rem;
+  border-radius: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .contenedor-edicion p {
+  font-size: 0.8rem;
+  color: var(--nine-color);
+  text-align: center;
+}
+
+footer .contenedor-cafeina {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 2rem;
+  width: 68rem;
+}
+
+footer .contenedor-cafeina .contenedor-titulo-monografia {
+  display: flex;
+  gap: 1rem;
+}
+
+footer .contenedor-cafeina .contenedor-titulo-monografia .logo-footer{
+  width: 1.8rem;
+  height: 1.5rem;
+}
+
+footer .contenedor-cafeina .contenedor-titulo-monografia h3 {
+  font-size: 1.2rem;
+  color: var(--nine-color);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+footer .contenedor-cafeina .contenedor-monografia p {
+  font-size: 1rem;
+  width: 20rem;
+  font-weight: 400;
+  color: var(--nine-color);
+}
+
+footer .contenedor-cafeina .contenedor-navegacion h3 {
+  font-size: 1.2rem;
+  color: var(--nine-color);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+footer .contenedor-cafeina .contenedor-navegacion ul {
+  list-style:  none;
+  color: var(--nine-color);
+}
+
+footer .contenedor-cafeina .contenedor-sena {
+  background-color: var(--fifteen-color);
+  border: 1px solid var(--nine-color);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+footer .contenedor-cafeina .contenedor-sena h3 {
+  font-size: 1.2rem;
+  color: var(--nine-color);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+footer .contenedor-cafeina .contenedor-sena p {
+  font-size: 1rem;
+  width: 20rem;
+  font-weight: 400;
+  color: var(--nine-color);
+}
+
+footer .contenedor-realizado {
+  margin-top: 2rem;
+  width: 68rem ;
+  border-top: 1px solid var(--fourthy-color);
+  padding-top: 1rem ;
+}
+
+footer .contenedor-realizado p { 
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--nine-color);
+  text-transform: uppercase;
+}
+
+
+.btn-flotante {
+  position: fixed;        /* se mantiene fijo en pantalla */
+  bottom: 1.25rem;           /* distancia desde el borde inferior */
+  left: 1.25rem;            /* distancia desde el borde derecho */
+  width: 10rem;
+  height: 2rem;
+  border-radius: 1rem;     /* forma circular */
+  border: none;
+  background-color: var(--eigth-color);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-flotante .btn-arriba {
+  width: 1rem;
+  height: 1rem;
+}
+
+.btn-flotante a {
+  color: var(--eleven-color);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn-flotante:hover {
+  transform: scale(1.1);  /* efecto al pasar el mouse */
+}
+
+html {
+  scroll-behavior:smooth; 
+}
